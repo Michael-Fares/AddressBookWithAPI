@@ -38,6 +38,10 @@ const displayUsers = () => {
     Age: ${user.dob.age},
     Phone: ${user.cell},
     Email: ${user.email}
+    Address: ${user.location.street.number},
+    Street: ${user.location.street.name},
+    City: ${user.location.city},
+    Country: ${user.location.country}
 
       `)
     button.addEventListener('click', function() {
