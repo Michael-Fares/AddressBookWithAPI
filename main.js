@@ -44,8 +44,8 @@ const displayUsers = () => {
     Country: ${user.location.country}
 
       `)
-    button.addEventListener('click', function() {
       const div = document.createElement('div')
+    button.addEventListener('click', function() {
       li.appendChild(div)
       div.appendChild(moreText)
     })

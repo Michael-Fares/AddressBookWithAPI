@@ -1,0 +1,16 @@
+div {
+  background-color: lightblue;
+  padding: 10px;
+}
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+}
+img {
+  margin-right: 10px;
+}
