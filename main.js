@@ -33,7 +33,7 @@ const displayUsers = () => {
     const text = document.createTextNode(`#${index}, Name: ${user.name.title} ${user.name.first} ${user.name.last}`)
     const button = document.createElement('button')
     button.innerText = "Show more info"
-    const moreText = document.createTextNode(`
+    let moreText = `
     Gender: ${user.gender},
     Age: ${user.dob.age},
     Phone: ${user.cell},
@@ -43,11 +43,11 @@ const displayUsers = () => {
     City: ${user.location.city},
     Country: ${user.location.country}
 
-      `)
+      `
       const div = document.createElement('div')
     button.addEventListener('click', function() {
       li.appendChild(div)
-      div.appendChild(moreText)
+      div.innerText = moreText
     })
     li.appendChild(img)
    li.appendChild(text)
